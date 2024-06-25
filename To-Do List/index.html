@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400&f[]=satoshi@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="task__title">Task Tracker</h1>
+        <div class="task__content">
+            <div class="add-task">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <input type="date" id="task-date">
+                <input type="time" id="task-time">
+                <div class="add-task__buttons">
+                    <button id="add-button"><i class="ri-add-line"></i></button>
+                    <div class="filter-button">
+                        <select class="filter" id="filter">
+                            <option value="all">All</option>
+                            <option value="completed">Completed</option>
+                            <option value="incompleted">Incompleted</option>
+                        </select>
+                    </div>
+                    <div class="sort-button">
+                        <select class="sort" id="sort">
+                            <option value="date">Date</option>
+                            <option value="time">Time</option>
+                            <option value="alphabetical">Alphabetical</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <ul id="task-list" class="task-list"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
