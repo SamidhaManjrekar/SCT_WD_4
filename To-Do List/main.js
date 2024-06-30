@@ -81,7 +81,7 @@ function filterTasks(e) {
     const tasks = taskList.childNodes;
 
     tasks.forEach(function (task) {
-        if (task.nodeType === 1) { // Ensure the node is an element
+        if (task.nodeType === 1) { 
             switch (filterValue) {
                 case 'all':
                     task.style.display = 'flex';
